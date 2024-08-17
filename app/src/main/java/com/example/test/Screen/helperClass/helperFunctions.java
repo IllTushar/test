@@ -101,7 +101,6 @@ public class helperFunctions {
                 if (userName.isEmpty() || userDOB.isEmpty() || userAddress.isEmpty() || Age.isEmpty()) {
                     // Display a message or handle empty fields
                     Toast.makeText(context, "Please fill in all fields", Toast.LENGTH_SHORT).show();
-                    dialog.dismiss();
                     return;
                 } else if (userDOB.equals("DOB")) {
                     Toast.makeText(context, "Please fill DOB", Toast.LENGTH_SHORT).show();
