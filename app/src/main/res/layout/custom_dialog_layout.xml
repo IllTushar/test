@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/close" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edit_box_layout"
+        android:hint="Enter Name"
+        android:padding="5dp"
+        android:textColorHint="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_box_layout"
+            android:hint="Age"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColorHint="@color/grey" />
+
+        <TextView
+            android:id="@+id/userDOB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_box_layout"
+            android:drawableLeft="@drawable/baseline_calendar_month_24"
+            android:padding="5dp"
+            android:text="DOB"
+            android:textColor="@color/grey"
+            android:textSize="19dp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/userAddress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_box_layout"
+        android:drawableLeft="@drawable/baseline_location_pin_24"
+        android:hint="Enter Address"
+        android:padding="5dp"
+        android:textColorHint="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Okay"
+            android:textColor="@color/green"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>
